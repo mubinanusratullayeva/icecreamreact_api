@@ -8,7 +8,7 @@ class BenefitCard(models.Model):
 
 
 class Testimonial(models.Model):
-    photo = models.FileField()
+    photo = models.FileField(upload_to='media')
     name = models.CharField(max_length=100)
     nation = models.CharField(max_length=100)
     testimonial = models.CharField(max_length=550)
